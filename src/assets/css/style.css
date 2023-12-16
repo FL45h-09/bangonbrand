@@ -1,0 +1,52 @@
+:root {
+  --color-grey: #343940;
+  --color-greybg: #2b2f34;
+  --color-lightgrey: #777;
+  --color-red: #e6070a;
+  --color-yellow: #ffd402;
+  --color-white: #fff;
+  --color-black: #000;
+  font-family: 'Raleway', sans-serif;
+  font-size: 18px;
+  line-height: normal;
+  font-weight: 400;
+  color: var(--color-lightgrey);
+}
+
+body {margin: 0;padding: 0; color: #5b5b5b; line-height: normal;  font-size: 18px; font-weight: 500; color: var(--color-grey);}
+html{scroll-behavior: smooth;}
+.container{max-width: min(1350px, 96%); margin: 0 auto;}
+.sm-container{max-width: min(1070px, 96%); margin: 0 auto;} 
+.xsm-container{max-width: min(950px, 96%); margin: 0 auto;}
+.reset{margin: 0; padding: 0; list-style: none;}
+a{text-decoration: none; color: #6c6c6c; transition: all .3s linear;}
+a:hover{color: var(--color-red);}
+img{max-width: 100%; height: auto; display: inherit;}
+/* h1, h2, h3, h4, h5, h6{margin: 0; font-family: 'Yeseva One', cursive; font-weight: 400;} */
+h1, h2, h3, h4, h5, h6{margin: 0; font-weight: 600; color: var(--color-black);}
+p{margin: 0;}
+h1{font-size: 30px; font-weight: 700; line-height: normal; color: var(--color-black);}
+.heading{font-size: 40px; font-weight: 600; line-height: 45px; letter-spacing: 0.5px; color: var(--color-black);}
+
+.headersection{background: var(--color-greybg);}
+.mainheader .container{display: flex; justify-content: space-between; align-items: center;}
+.headersection ul{display: flex; flex-flow: row nowrap; gap: 30px; justify-content: end;}
+.headersection ul li a{font-size: 14px; line-height: normal; font-weight: 600; color: var(--color-white); text-transform: uppercase;}
+.headersection ul li a:hover{color: var(--color-red);}
+.headersection .mainheader{padding: 0 0 5px; border-top: 1px solid var(--color-grey);}
+.headersection .headertop{padding: 15px 0;}
+
+/* LayOut css here */
+.fplayout .mainwrap{display: grid; grid-template-columns: auto 78vw; gap: 20px;}
+
+
+/* Swiper carousel */
+/* .mySwiper .swiper-slide{padding: 200px 0;} */
+.bannersec .bannercapion{width: min(440px, 100%); padding: 20px 0 355px;}
+.bannersec .bannercapion h3{font-size: 30px; line-height: 35px; font-weight: 700; color: var(--color-greybg); text-transform: uppercase; margin-bottom: 10px;}
+.bannersec .bannercapion p{font-size: 17px; line-height: 22px; font-weight: 500; color: var(--color-greybg); font-style: italic;}
+.bannersec .bannercapion p span{font-weight: 600; text-transform: uppercase;}
+.bannersec .bannercapion h3 span{color: var(--color-red); display: block;}
+.bannersec .bannercapion .btnsec{margin-top: 20px;}
+.btnsec a{display: inline-block; text-align: center; font-size: 16px; line-height: normal; font-weight: 500; text-transform: uppercase; color: var(--color-white); background: var(--color-red); border-radius: 50px; padding: 12px 30px; min-width: 180px; font-style: italic; box-sizing: border-box;}
+.btnsec a:hover{background: var(--color-lightgrey);}
