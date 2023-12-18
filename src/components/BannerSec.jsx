@@ -6,12 +6,12 @@ import 'swiper/css';
 import 'swiper/css/pagination';
 
 // import required modules
-import { Pagination } from 'swiper/modules';
+import { Pagination, Autoplay } from 'swiper/modules';
 // import { Autoplay } from 'swiper/modules';
 export const BannerSec = () => {
   return (
     <div className='bannersec'>
-      <Swiper loop={true} pagination={{clickable: true,}} modules={[Pagination]} className="mySwiper">
+      <Swiper loop={true} pagination={{clickable: true,}} autoplay={{ delay: 3000, disableOnInteraction: false, }} modules={[Pagination, Autoplay]} className="bannerslider">
         <SwiperSlide className='slide1'>
             <div className="bannercapion">
                 <h3>Products That Make <span>a Statement</span></h3>
