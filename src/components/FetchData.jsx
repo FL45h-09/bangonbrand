@@ -1,5 +1,5 @@
 // // import React from 'react'
-// import { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 // import { json } from "react-router-dom";
 
 // export const FetchData = () => {    
@@ -49,3 +49,39 @@
 //     </div>
 //   )
 // }
+
+
+
+export const FetchData = () => {
+    const [data, setData] = useState(null);
+    // const [loading, setLoading] = useState(true);
+    // const [error, setError] = useState(null);
+    useEffect(() => {
+    // data fetching here
+        fetch(`https://dummyjson.com/products/`)
+        .then((response) => {
+            return response.json();
+          })
+          .then((actualData) => {
+            console.log(actualData);
+            setData(actualData.products);
+        })
+    }, []);
+  return (
+    <div>
+        <h1>Type: {typeof(data)}</h1>
+        <ul className="reset">
+        {data &&
+          data.map(({ id, title, thumbnail, price }) => (
+            <li key={id}>
+                <div className="imgbox"><img src={thumbnail} alt={title} /></div>
+                <div className="contentbox">
+                    <h3>{title}</h3>
+                    <p>Priced from ${price}</p>
+                </div>
+            </li>
+          ))}
+      </ul>
+    </div>
+  )
+}
