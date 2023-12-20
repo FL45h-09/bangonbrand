@@ -3,10 +3,9 @@ import { useEffect, useState } from "react";
 
 export const FetchData = () => {
     const [data, setData] = useState(null);
-    // const [loading, setLoading] = useState(true);
-    // const [error, setError] = useState(null);
     useEffect(() => {
     // data fetching here
+    // https://dummyjson.com/docs // This is a documentation for the dummy product API and there is a file for other routes
         fetch(`https://dummyjson.com/products?limit=8`)
         .then((response) => {
             return response.json();

@@ -1,7 +1,7 @@
 // import React from 'react'
 // import { HeaderSec } from "../HeaderSec";
 // import { FooterSec } from "../FooterSec";
-import { SidebarSec } from "../SidebarSec";
+import { SidebarSec } from "../global/SidebarSec";
 import PropTypes from 'prop-types';  
 
 const LsideBar = ({ children }) => {

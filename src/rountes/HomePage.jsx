@@ -1,6 +1,6 @@
 import LsideBar from "../components/layouts/LsideBar";
 import { BannerSec } from "../components/BannerSec";
-import { FetchData } from "../components/FetchData";
+import { FetchData } from "../utils/FetchData";
 
 const HomePage = () => {
   return (
