@@ -60,3 +60,10 @@ h1{font-size: 30px; font-weight: 700; line-height: normal; color: var(--color-bl
 .bannerslider .swiper-pagination{top: initial; bottom: 20%; display: flex; left: 50px;}
 .bannerslider .swiper-pagination-bullet{ background: var(--color-greybg); padding: 0px 12px; border-radius: initial; box-sizing: border-box;  height: 4px;}
 .bannerslider .swiper-pagination-bullet.swiper-pagination-bullet-active{background: var(--color-red);}
+
+/* Product Section */
+.productsection ul{display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px;}
+.productsection ul li{border: 1px solid #ddd;}
+.productsection ul li .imgbox img{aspect-ratio: 16/9; width: 100%; object-fit: cover;}
+.productsection ul li .contentbox{padding: 15px; text-align: center;}
+.productsection ul li .contentbox h3{min-height: 50px;}
