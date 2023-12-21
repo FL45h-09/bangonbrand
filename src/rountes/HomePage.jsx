@@ -1,16 +1,15 @@
-import LsideBar from "../components/layouts/LsideBar";
+import LsideBarLayout from "../components/layouts/LsideBarLayout";
 import { BannerSec } from "../components/BannerSec";
 import { FetchData } from "../utils/FetchData";
 
 const HomePage = () => {
   return (
-    <LsideBar>
+    <LsideBarLayout>
         <div className="pagebody">
           <BannerSec />
-          <h1>Main Home with Right sideBar</h1>
           <FetchData />
         </div>
-    </LsideBar>
+    </LsideBarLayout>
   )
 }
 
