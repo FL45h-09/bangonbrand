@@ -1,6 +1,6 @@
 
 export const SidebarSec = () => {
   return (
-    <div>SidebarSec</div>
+    <div className="sidebarsec">SidebarSec</div>
   )
 }

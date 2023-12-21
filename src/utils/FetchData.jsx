@@ -17,7 +17,6 @@ export const FetchData = () => {
     }, []);
   return (
     <div className="productsection">
-      <div className="catheading"><h2><span>New </span> Products</h2></div>
         <ul className="reset">
         {data &&
           data.map(({ id, title, thumbnail, price }) => (

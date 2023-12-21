@@ -4,7 +4,7 @@
 import { SidebarSec } from "../global/SidebarSec";
 import PropTypes from 'prop-types';  
 
-const LsideBarLayout = ({ children }) => {
+export const LsideBarLayout = ({ children }) => {
   return (
     <div className='fplayout'>
       {/* <div className="container"> */}
@@ -16,8 +16,6 @@ const LsideBarLayout = ({ children }) => {
     // </div>
   )
 }
-
-export default LsideBarLayout;
 
 LsideBarLayout.propTypes = {
   children: PropTypes.element.isRequired

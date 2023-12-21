@@ -5,6 +5,7 @@
   --color-red: #e6070a;
   --color-yellow: #ffd402;
   --color-white: #fff;
+  --color-offwhite: #f1f1f1;
   --color-black: #000;
   font-family: 'Raleway', sans-serif;
   font-size: 18px;
@@ -37,11 +38,21 @@ h1{font-size: 30px; font-weight: 700; line-height: normal; color: var(--color-bl
 .headersection .headertop{padding: 15px 0;}
 
 /* LayOut css here */
-.fplayout .mainwrap{display: grid; grid-template-columns: auto 82dvw; gap: 20px;}
+.mainwrap{display: grid; grid-template-columns: auto 82dvw; gap: 20px;}
+/* .listingsection{padding: 50px 0;} */
 
 /* Button Css */
 .btnsec a{display: inline-block; text-align: center; font-size: 16px; line-height: normal; font-weight: 500; text-transform: uppercase; color: var(--color-white); background: var(--color-red); border-radius: 50px; padding: 12px 30px; min-width: 180px; font-style: italic; box-sizing: border-box;}
 .btnsec a:hover{background: var(--color-lightgrey);}
+
+/* Breadcrumb Section */
+.breadcrumbsec{padding: 20px; background: var(--color-offwhite); color: var(--color-black);}
+.breadcrumbsec ul{display: flex; justify-content: start; gap: 20px;}
+.breadcrumbsec ul li{position: relative;}
+.breadcrumbsec ul li{font-size: 16px; line-height: normal; font-weight: 400;}
+.breadcrumbsec ul li a{color: var(--color-red);}
+.breadcrumbsec ul li a:hover{color: var(--color-yellow);}
+.breadcrumbsec ul li:not(:first-child):before{content: "/"; position: absolute; left: -15px; top: 0; font-size: 16px; line-height: normal; font-weight: 600; color: var(--color-black);}
 
 /* Swiper carousel */
 /* .mySwiper .swiper-slide{padding: 200px 0;} */

@@ -1,5 +1,5 @@
 // import React, { useRef, useState } from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import { Swiper, SwiperSlide } from 'swiper/react';
 // Import Swiper styles
 import 'swiper/css';
@@ -16,42 +16,42 @@ export const BannerSec = () => {
             <div className="bannercapion">
                 <h3>Products That Make <span>a Statement</span></h3>
                 <p>Huge range or products and decorating techniques. Promotions made easy with <span>BANG ON BRAND</span></p>
-                <div className="btnsec"><Link to='#'>Know More</Link></div>
+                <div className="btnsec"><NavLink to='#'>Know More</NavLink></div>
             </div>
         </SwiperSlide>
         <SwiperSlide className='slide2'>
             <div className="bannercapion">
                 <h3>Products That Make <span>a Statement</span></h3>
                 <p>Huge range or products and decorating techniques. Promotions made easy with <span>BANG ON BRAND</span></p>
-                <div className="btnsec"><Link to='#'>Know More</Link></div>
+                <div className="btnsec"><NavLink to='#'>Know More</NavLink></div>
             </div>
         </SwiperSlide>
         <SwiperSlide className='slide3'>
             <div className="bannercapion">
                 <h3>Products That Make <span>a Statement</span></h3>
                 <p>Huge range or products and decorating techniques. Promotions made easy with <span>BANG ON BRAND</span></p>
-                <div className="btnsec"><Link to='#'>Know More</Link></div>
+                <div className="btnsec"><NavLink to='#'>Know More</NavLink></div>
             </div>
         </SwiperSlide>
         <SwiperSlide className='slide4'>
             <div className="bannercapion">
                 <h3>Products That Make <span>a Statement</span></h3>
                 <p>Huge range or products and decorating techniques. Promotions made easy with <span>BANG ON BRAND</span></p>
-                <div className="btnsec"><Link to='#'>Know More</Link></div>
+                <div className="btnsec"><NavLink to='#'>Know More</NavLink></div>
             </div>
         </SwiperSlide>
         <SwiperSlide className='slide5'>
             <div className="bannercapion">
                 <h3>Products That Make <span>a Statement</span></h3>
                 <p>Huge range or products and decorating techniques. Promotions made easy with <span>BANG ON BRAND</span></p>
-                <div className="btnsec"><Link to='#'>Know More</Link></div>
+                <div className="btnsec"><NavLink to='#'>Know More</NavLink></div>
             </div>
         </SwiperSlide>
         <SwiperSlide className='slide6'>
             <div className="bannercapion">
                 <h3>Products That Make <span>a Statement</span></h3>
                 <p>Huge range or products and decorating techniques. Promotions made easy with <span>BANG ON BRAND</span></p>
-                <div className="btnsec"><Link to='#'>Know More</Link></div>
+                <div className="btnsec"><NavLink to='#'>Know More</NavLink></div>
             </div>
         </SwiperSlide>
       </Swiper>
