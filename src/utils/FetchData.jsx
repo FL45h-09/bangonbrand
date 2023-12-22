@@ -1,5 +1,6 @@
 // import React from 'react'
 import { useEffect, useState } from "react";
+import { ProductCard } from "../components/global/ProductCard";
 
 export const FetchData = () => {
     const [data, setData] = useState(null);
@@ -21,12 +22,7 @@ export const FetchData = () => {
         {data &&
           data.map(({ id, title, thumbnail, price }) => (
             <li key={id}>
-                <div className="imgbox"><img src={thumbnail} alt={title} /></div>
-                <div className="contentbox">
-                    <h3>{title}</h3>
-                    <h5>Product Sku: {id}</h5>
-                    <p>Priced from ${price}</p>
-                </div>
+              <ProductCard imgsrc={thumbnail} title={title} sku={id} price={price} />
             </li>
           ))}
       </ul>
