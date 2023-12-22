@@ -1,5 +1,6 @@
 #Resources
 API: https://dummyjson.com/
+https://dummyjson.com/docs
 Following resources are available which you can access via our REST API.
 
 /products	100 products
