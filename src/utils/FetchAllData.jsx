@@ -2,12 +2,14 @@
 import { useEffect, useState } from "react";
 import { ProductCard } from "../components/global/ProductCard";
 
-export const FetchData = () => {
+export const FetchAllData = () => {
     const [data, setData] = useState(null);
+    const[limit, setlimit] = useState(8);
     useEffect(() => {
     // data fetching here
     // https://dummyjson.com/docs // This is a documentation for the dummy product API and there is a file for other routes
-        fetch(`https://dummyjson.com/products?limit=8`)
+    const apiUrl = `https://dummyjson.com/products?limit=${limit}`;
+        fetch(apiUrl)
         .then((response) => {
             return response.json();
           })

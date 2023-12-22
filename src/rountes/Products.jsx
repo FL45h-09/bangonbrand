@@ -1,13 +1,13 @@
 // import React from 'react'
 import { ProductListLayout } from "../components/layouts/ProductListLayout";
-import { FetchData } from "../utils/FetchData";
+import { FetchAllData } from "../utils/FetchAllData";
 
 const Products = () => {
   return (
     <ProductListLayout>
       <div className="pagebody">
         <h1>All Products</h1>
-        <FetchData />
+        <FetchAllData />
       </div>
     </ProductListLayout>
   )

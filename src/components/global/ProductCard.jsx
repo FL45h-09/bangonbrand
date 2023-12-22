@@ -15,6 +15,6 @@ export const ProductCard = (props) => {
 ProductCard.propTypes = {
     imgsrc: PropTypes.string.isRequired,
     title: PropTypes.string.isRequired,
-    sku: PropTypes.string.isRequired,
+    sku: PropTypes.number.isRequired,
     price: PropTypes.number.isRequired
   };

@@ -1,13 +1,13 @@
 // import React from 'react'
 import { ProductListLayout } from "../components/layouts/ProductListLayout";
-import { FetchData } from "../utils/FetchData";
+import { FetchAllData } from "../utils/FetchAllData";
 
 const PopularCategories = () => {
   return (
     <ProductListLayout>
       <div className="pagebody">
         <h1>Popular Categories</h1>
-        <FetchData />
+        <FetchAllData />
       </div>
     </ProductListLayout>
   )
