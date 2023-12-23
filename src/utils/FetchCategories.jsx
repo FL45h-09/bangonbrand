@@ -2,6 +2,7 @@
 import { useEffect, useState } from "react";
 // import { ProductCard } from "../components/global/ProductCard";
 import { NavLink } from "react-router-dom";
+import {ConvertSlug} from "../utils/Functions";
 
 export const FetchCategories = () => {
     const [categories, setCategories] = useState(null);
@@ -22,7 +23,7 @@ export const FetchCategories = () => {
     <ul className="reset categorynav">
         {categories &&
             categories.map((item) => (
-            <li key={item}><NavLink to="#">{item}</NavLink></li>
+            <li key={item}><NavLink to={`/categories/${item}/ `}>{ConvertSlug(item)}  </NavLink></li>
         ))}
     </ul>
   )
