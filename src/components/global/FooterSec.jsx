@@ -1,4 +1,4 @@
-import { NavLink } from "react-router-dom"
+import { NavLink } from "react-router-dom";
 
 export const FooterSec = () => {
   const currentDate = new Date();
