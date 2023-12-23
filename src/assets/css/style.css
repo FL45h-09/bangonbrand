@@ -73,6 +73,7 @@ h1{font-size: 30px; font-weight: 700; line-height: normal; color: var(--color-bl
 .bannerslider .swiper-pagination-bullet.swiper-pagination-bullet-active{background: var(--color-red);}
 
 /* Product Section */
+.productsection{padding: 40px 0;}
 .productsection ul{display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px;}
 .productsection ul li{border: 1px solid #ddd;}
 .productsection ul li .imgbox img{aspect-ratio: 16/9; width: 100%; object-fit: cover;}
@@ -81,7 +82,24 @@ h1{font-size: 30px; font-weight: 700; line-height: normal; color: var(--color-bl
 
 
 /* Sidebar Section */
-.sidebarsec{ background: var(--color-offwhite); padding: 30px 20px; display: flex; flex-flow: column wrap; gap: 20px;}
-.sidebarsec h3{padding-bottom: 5px; border-bottom: 1px solid var(--color-red); margin-bottom: 10px;}
+.sidebarsec{ background: var(--color-offwhite); padding: 30px 0px; display: flex; flex-flow: column wrap; gap: 300px;}
+.sidebarsec h3{padding: 0 10px 5px; border-bottom: 1px solid var(--color-red); margin-bottom: 10px;}
 .sidebarsec ul li a{display: block; font-size: 16px; line-height: normal; font-weight: 500; color: var(--color-greybg); background: var(--color-offwhite); padding: 10px;}
 .sidebarsec ul li a:hover{background: var(--color-lightgrey); color: var(--color-white);}
+
+.catheading{padding: 15px 20px; background: var(--color-greybg); margin: 20px 0 0;}
+.catheading h2{font-size: 30px; line-height: normal; font-weight: 500; color: var(--color-white);}
+.catheading h2 span{color: var(--color-red);}
+
+/* Footer Section */
+.footersection{padding: 70px 0; background: url(/images/footer-bg.jpg) no-repeat center; background-size: cover;}
+.footersection .footerwrap{display: grid; grid-template-columns: repeat(4, 1fr); gap: 30px;}
+.footersection .logosec{margin-bottom: 40px;}
+.footersection .footerbox ul{display: flex; flex-flow: column wrap; gap: 20px;}
+.footersection .footerbox ul li a, .footersection .footerbox p{display: inline-block; font-size: 14px; line-height: normal; font-weight: 500; text-transform: uppercase; color: var(--color-white); transition: transform .3s linear;}
+.footersection .footerbox ul:not(.socialicons) li a:hover{color: var(--color-red); transform: translateX(10px);}
+.footersection .footerbox ul.socialicons{flex-flow: row wrap;}
+.footersection .footerbox p{margin-top: 20px;}
+
+.pagenotfound{text-align: center;}
+.pagenotfound .gifsection iframe{width: 80%;}

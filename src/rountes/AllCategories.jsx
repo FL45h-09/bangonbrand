@@ -2,7 +2,7 @@
 import { ProductListLayout } from "../components/layouts/ProductListLayout";
 import { FetchAllData } from "../utils/FetchAllData";
 
-const PopularCategories = () => {
+const AllCategories = () => {
   return (
     <ProductListLayout>
       <div className="pagebody">
@@ -13,4 +13,4 @@ const PopularCategories = () => {
   )
 }
 
-export default PopularCategories;
+export default AllCategories;

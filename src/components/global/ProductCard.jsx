@@ -1,11 +1,12 @@
 import PropTypes from 'prop-types';
+import { NavLink } from 'react-router-dom';
 
 export const ProductCard = (props) => {
   return (
     <div className='productcardsec'>
         <div className="imgbox"><img src={props.imgsrc} alt={props.title} /></div>
         <div className="contentbox">
-            <h3>{props.title}</h3>
+            <h3><NavLink to={`/products/${props.sku}`} >{props.title}</NavLink></h3>
             <h5>Product Sku: {props.sku}</h5><p>Priced from ${props.price}</p>
         </div>
     </div>

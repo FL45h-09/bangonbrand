@@ -4,8 +4,10 @@ import { Routes, Route } from "react-router-dom";
 import HomePage from './HomePage';
 import NewProducts from './NewProducts';
 import GetItfast from './GetItFast';
-import PopularCategories from './PopularCategories';
+import AllCategories from './AllCategories';
 import Products from './Products';
+import { ProductSinglePage } from "./ProductSinglePage";
+import { NotFound } from "./NotFound";
 
 export const DefineRoutes = () => {
   return (
@@ -13,8 +15,10 @@ export const DefineRoutes = () => {
       <Route path='/' element={<HomePage />} />
       <Route path='/new-products/' element={<NewProducts />} />
       <Route path='/get-it-fast/' element={<GetItfast />} />
-      <Route path='/popular-categories/' element={<PopularCategories />} />
+      <Route path='/categories/' element={<AllCategories />} />
       <Route path='/products/' element={<Products />} />
+      <Route path="/products/:productId" element={ <ProductSinglePage /> } />
+      <Route path='*' element={<NotFound />}/>
     </Routes>
   )
 }
