@@ -24,7 +24,7 @@ export const FetchAllData = () => {
         {data &&
           data.map(({ id, title, thumbnail, price }) => (
             <li key={id}>
-              <ProductCard imgsrc={thumbnail} title={title} sku={id} price={price} />
+              <ProductCard imgsrc={thumbnail} title={title} id={id} price={price} />
               {/* This Product card is in components/global/ and values are pass through props */}
             </li>
           ))}
