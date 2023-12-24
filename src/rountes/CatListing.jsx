@@ -3,6 +3,7 @@ import { useState, useEffect } from "react";
 import {useParams} from "react-router-dom";
 import { BreadcrumbSec } from "../components/global/BreadcrumbSec";
 import { ProductCard } from "../components/global/ProductCard";
+import { ProductListLayout } from "../components/layouts/ProductListLayout";
 
 export const CatListing = () => {
     const [isLoading, setIsLoading] = useState(true);
@@ -23,7 +24,7 @@ export const CatListing = () => {
       }, [catId]);
   return (
     <>
-      <BreadcrumbSec />
+      <ProductListLayout>
       <div className="productsection">
             {!isLoading && (
                 <>
@@ -39,6 +40,7 @@ export const CatListing = () => {
                 </>
             )}
       </div>
+      </ProductListLayout>
     </>
   )
 }

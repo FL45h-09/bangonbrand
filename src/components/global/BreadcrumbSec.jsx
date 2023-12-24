@@ -23,22 +23,17 @@ export const BreadcrumbSec = () => {
                 return (currentPath.map((item, index)=>{
                   // console.log(index);
                   if(index < arrayCount){
-                    return <li key={item}><NavLink to={`/${item}/`}>{item}</NavLink></li>;
+                    let itemSplit = item.split('-').filter(Boolean).join(' ');
+                    return <li key={item}><NavLink to={`/${item}/`}>{itemSplit}</NavLink></li>;
                   }else{
-                    return <li key={item}>{item}</li>;
+                    let itemSplit = item.split('-').filter(Boolean).join(' ');
+                    return <li key={item}>{itemSplit}</li>;
                   }
                 })
                 )
               }
             }
           )()}
-          {/* {
-            currentPath.constructor.name == "String" ? 
-          <li>{currentPath}</li> :
-          currentPath.map((item)=>{
-            <li key={item}><NavLink to="#">{item}</NavLink></li>
-          })
-          } */}
         </ul>
     </div>
   )
