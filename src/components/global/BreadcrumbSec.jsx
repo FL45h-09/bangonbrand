@@ -7,13 +7,38 @@ import { ConvertSlug } from "../../utils/Functions";
 export const BreadcrumbSec = () => {
   let currentPath = useLocation().pathname;
   currentPath = ConvertSlug(currentPath);
+  // console.log(currentPath.constructor.name);
 
   // currentPath = currentPath;
   return (
     <div className="breadcrumbsec">
         <ul className="reset">
           <li><NavLink to='/'>Home</NavLink></li>
-          <li>{currentPath}</li>
+          {(
+            ()=>{
+              if(currentPath.constructor.name == "String"){
+                return <li>{currentPath}</li>;
+              }else if(currentPath.constructor.name == "Array"){
+                let arrayCount = currentPath.length - 1;
+                return (currentPath.map((item, index)=>{
+                  // console.log(index);
+                  if(index < arrayCount){
+                    return <li key={item}><NavLink to={`/${item}/`}>{item}</NavLink></li>;
+                  }else{
+                    return <li key={item}>{item}</li>;
+                  }
+                })
+                )
+              }
+            }
+          )()}
+          {/* {
+            currentPath.constructor.name == "String" ? 
+          <li>{currentPath}</li> :
+          currentPath.map((item)=>{
+            <li key={item}><NavLink to="#">{item}</NavLink></li>
+          })
+          } */}
         </ul>
     </div>
   )

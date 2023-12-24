@@ -1,6 +1,7 @@
 // import React from 'react'
 import { useState, useEffect } from "react";
 import {useParams} from "react-router-dom";
+import { BreadcrumbSec } from "../components/global/BreadcrumbSec";
 
 export const ProductSinglePage = () => {
     const [isLoading, setIsLoading] = useState(true);
@@ -20,6 +21,7 @@ export const ProductSinglePage = () => {
       }, [productId]);
   return (
     <div>
+      <BreadcrumbSec />
         {!isLoading && (
         <>
         <div className="imgbox"><img src={data.thumbnail} alt={data.title} /></div>
