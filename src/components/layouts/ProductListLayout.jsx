@@ -3,7 +3,7 @@ import { CatSidebarSec } from "../global/CatSidebarSec";
 import { BreadcrumbSec } from "../global/BreadcrumbSec";
 import PropTypes from 'prop-types';
 
-export const ProductListLayout = ({ children }) => {
+export const ProductListLayout = ({children}) => {
   return (
     <div className="listingsection">
       <BreadcrumbSec />

@@ -6,7 +6,7 @@ const AllCategories = () => {
   return (
     <ProductListLayout>
       <div className="pagebody">
-        <h1>Popular Categories</h1>
+      <div className="catheading"><h1><span>Popular </span> Categories</h1></div>
         <FetchAllData />
       </div>
     </ProductListLayout>

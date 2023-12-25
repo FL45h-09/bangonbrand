@@ -7,6 +7,7 @@ const NewProducts = () => {
   return (
     <ProductListLayout>
       <div className="pagebody">
+      <div className="catheading"><h1><span>New</span> Products</h1></div>
         <FetchAllData />
       </div>
     </ProductListLayout>

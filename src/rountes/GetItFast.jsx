@@ -6,7 +6,7 @@ const GetItFast = () => {
   return (
     <ProductListLayout>
       <div className="pagebody">
-      <h1>Get It Fast</h1>
+      <div className="catheading"><h1>Get It <span>Fast</span></h1></div>
         <FetchAllData />
       </div>
     </ProductListLayout>
