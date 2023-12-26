@@ -23,7 +23,7 @@ export const FetchCategories = () => {
     <ul className="reset categorynav">
         {categories &&
             categories.map((item) => (
-            <li key={item}><NavLink to={`/category/${item}/ `}>{ConvertSlug(item)}  </NavLink></li>
+            <li key={item}><NavLink to={`/categories/${item}/ `}>{ConvertSlug(item)}  </NavLink></li>
         ))}
     </ul>
   )

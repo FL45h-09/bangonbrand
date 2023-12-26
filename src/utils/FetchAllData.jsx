@@ -1,6 +1,6 @@
 // import React from 'react'
 // import { useEffect, useState } from "react";
-import { ProductCard } from "../components/global/ProductCard";
+// import { ProductCard } from "../components/global/ProductCard";
 import { ApiConn } from "./ApiConn";
 
 export const FetchAllData = () => {

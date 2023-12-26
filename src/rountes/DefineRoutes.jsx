@@ -19,7 +19,7 @@ export const DefineRoutes = () => {
       <Route path='/categories/' element={<AllCategories />} />
       <Route path='/products/' element={<Products />} />
       <Route path="/products/:productId/" element={ <ProductSinglePage /> } />
-      <Route path="/category/:catId/" element={ <CatListing /> } />
+      <Route path="/categories/:catId/" element={ <CatListing /> } />
       <Route path='*' element={<NotFound />}/>
     </Routes>
   )
