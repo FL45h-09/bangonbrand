@@ -40,9 +40,9 @@ export const ApiConn = (props) => {
       <>
         <ul className="reset">
           {data &&
-            data.map(({ id, title, thumbnail, price }) => (
+            data.map(({ id, title, thumbnail, price, category }) => (
               <li key={id}>
-                <ProductCard imgsrc={thumbnail} title={title} id={id} price={price} />
+                <ProductCard imgsrc={thumbnail} title={title} id={id} price={price} Catname={category} />
                 {/* This Product card is in components/global/ and values are pass through props */}
               </li>
             ))}

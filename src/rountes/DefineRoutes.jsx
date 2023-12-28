@@ -18,9 +18,11 @@ export const DefineRoutes = () => {
       <Route path='/get-it-fast/' element={<GetItfast />} />
       <Route path='/categories/' element={<AllCategories />} />
       <Route path='/products/' element={<Products />} />
-      <Route path="/products/:productId/" element={ <ProductSinglePage /> } />
+      {/* <Route path="/products/:productId/" element={ <ProductSinglePage /> } /> */}
+      <Route path="/products/:catId/:productId/" element={ <ProductSinglePage /> } />
       <Route path="/categories/:catId/" element={ <CatListing /> } />
       <Route path='*' element={<NotFound />}/>
+      
     </Routes>
   )
 }

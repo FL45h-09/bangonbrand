@@ -21,7 +21,7 @@ export const BreadcrumbSec = () => {
               }else if(currentPath.constructor.name == "Array"){
                 let arrayCount = currentPath.length - 1;
                 return (currentPath.map((item, index)=>{
-                  // console.log(index);
+                  // console.log(index)
                   if(index < arrayCount){
                     let itemSplit = item.split('-').filter(Boolean).join(' ');
                     return <li key={item}><NavLink to={`/${item}/`}>{itemSplit}</NavLink></li>;

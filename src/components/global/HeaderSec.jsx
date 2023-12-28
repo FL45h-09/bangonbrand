@@ -1,6 +1,8 @@
 import { NavBarSec } from "./NavBarSec";
 import logoSrc from "/images/logo.png";
 import { NavLink } from "react-router-dom";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCartShopping, faHeart, faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons';
 
 export const HeaderSec = () => {
   return (
@@ -8,9 +10,9 @@ export const HeaderSec = () => {
         <div className="headertop">
           <div className="container">
             <ul className="reset">
-              <li><NavLink to='#'>Cart</NavLink></li>
-              <li><NavLink to='#'>Wishlist</NavLink></li>
-              <li><NavLink to='#'>Search</NavLink></li>
+              <li><NavLink to='#'><FontAwesomeIcon icon={faCartShopping} /></NavLink></li>
+              <li><NavLink to='#'><FontAwesomeIcon icon={faHeart} /></NavLink></li>
+              <li><NavLink to='#'><FontAwesomeIcon icon={faMagnifyingGlass} /></NavLink></li>
               <li><NavLink to='#'>Sign in</NavLink></li>
             </ul>
           </div>

@@ -10,6 +10,7 @@ export const ProductSinglePage = () => {
     const [data, setData] = useState();
     // const productId = match.params.proId;
     const {productId} = useParams();
+    const {catId} = useParams();
     // console.log(productId);
     useEffect(() => {
         fetch(`https://dummyjson.com/products/${productId}`, {})
