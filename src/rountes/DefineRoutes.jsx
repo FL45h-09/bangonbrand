@@ -8,6 +8,7 @@ import AllCategories from './AllCategories';
 import Products from './Products';
 import { ProductSinglePage } from "./ProductSinglePage";
 import { CatListing } from "./CatListing";
+import { CartList } from "./CartList";
 import { NotFound } from "./NotFound";
 
 export const DefineRoutes = () => {
@@ -18,6 +19,7 @@ export const DefineRoutes = () => {
       <Route path='/get-it-fast/' element={<GetItfast />} />
       <Route path='/categories/' element={<AllCategories />} />
       <Route path='/products/' element={<Products />} />
+      <Route path='/cart/' element={<CartList />} />
       {/* <Route path="/products/:productId/" element={ <ProductSinglePage /> } /> */}
       <Route path="/products/:catId/:productId/" element={ <ProductSinglePage /> } />
       <Route path="/categories/:catId/" element={ <CatListing /> } />

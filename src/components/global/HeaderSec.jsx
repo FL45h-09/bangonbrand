@@ -10,7 +10,7 @@ export const HeaderSec = () => {
         <div className="headertop">
           <div className="container">
             <ul className="reset">
-              <li><NavLink to='#'><FontAwesomeIcon icon={faCartShopping} /></NavLink></li>
+              <li><NavLink to='/cart/'><FontAwesomeIcon icon={faCartShopping} /></NavLink></li>
               <li><NavLink to='#'><FontAwesomeIcon icon={faHeart} /></NavLink></li>
               <li><NavLink to='#'><FontAwesomeIcon icon={faMagnifyingGlass} /></NavLink></li>
               <li><NavLink to='#'>Sign in</NavLink></li>
