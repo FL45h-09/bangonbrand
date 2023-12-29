@@ -10,6 +10,7 @@ import { ProductSinglePage } from "./ProductSinglePage";
 import { CatListing } from "./CatListing";
 import { NotFound } from "./NotFound";
 
+
 export const DefineRoutes = () => {
   return (
     <Routes>
